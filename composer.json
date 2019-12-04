@@ -1,0 +1,26 @@
+{
+    "name": "mzsongyan/sentry",
+    "type": "library",
+    "description": "A PHP client for Sentry (http://getsentry.com)",
+    "require-dev": {
+        "monolog/monolog": "*"
+    },
+    "require": {
+        "php": "^5.3|^7.0",
+        "ext-curl": "*"
+    },
+    "suggest": {
+        "ext-hash": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "monolog/monolog": "Automatically capture Monolog events as breadcrumbs"
+    },
+    "conflict": {
+        "raven/raven": "*"
+    },
+    "autoload": {
+        "psr-0" : {
+            "Raven_" : "lib/"
+        }
+    }
+}
